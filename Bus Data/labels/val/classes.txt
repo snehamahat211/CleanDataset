@@ -1,0 +1,5 @@
+car
+license_plate
+bike
+bus
+bu
