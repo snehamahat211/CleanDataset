@@ -2,6 +2,5 @@ path: FinalDatasets
 train: images/train
 val: images/val
 test: images/test
-
 nc: 1
-names: ["license_plate"]
+names: ['license_plate']
