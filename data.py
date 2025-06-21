@@ -73,6 +73,44 @@ def copy_to_final(data_split):
             img_dest=os.path.join(FINAL_DIR,'images',subset, os.path.basename(img_path))
             lbl_dest = os.path.join(FINAL_DIR, 'labels', subset, os.path.basename(lbl_path))
 
+            filtered_labels = filter_labels_to_license_plate(lbl_path)
+
+            if filtered_labels:
+                shutil.copy2(img_path, img_dest)
+                with open(lbl_dest, 'w') as out_f:
+                    out_f.writelines(filtered_labels)
+
+            if __name__ == "__main__":
+                print("Collecting and filtering data:")
+                data = collect_data()
+
+                print(f"Total usable images with license plates: {len(data)}")
+                data_split = split_data(data)
+
+                print(f"preparing dataset folders")
+                prepare_final_folders()
+
+                print(f"copying filtered images and labels")
+                copy_to_final(data_split)
+
+                print("🎉 Done! Your YOLOv8-ready dataset is in 'FinalDatasets/'")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
