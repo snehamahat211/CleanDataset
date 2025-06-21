@@ -1,23 +1,7 @@
-import os
-import shutil
-from pathlib import Path
-from PIL import image
-import random
+path: FinalDatasets
+train: images/train
+val: images/val
+test: images/test
 
-DATASETS=[
-" LicenseDetect/Bike_Car Data/train"
-" LicenseDetect/Bike_Car Data/val"
-" LicenseDetect/Bus Data/train"
-" LicenseDetect/Bus Data/val"
-]
-
-LICENSE_PLATE=0
-OUTPUT_PATH=path("FinalDatasets")
-  IMAGE_PATHS = {
-"train": OUTPUT_PATH / "images" / "train",
-"val": OUTPUT_PATH / "images" / "val",
-"test": OUTPUT_PATH / "images" / "test"
-}
-
-
-
+nc: 1
+names: ["license_plate"]
