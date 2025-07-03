@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Bike_Car Data/.idea/Bike_Car Data.iml" filepath="$PROJECT_DIR$/Bike_Car Data/.idea/Bike_Car Data.iml" />
       <module fileurl="file://$PROJECT_DIR$/Bus Data/.idea/Bus Data.iml" filepath="$PROJECT_DIR$/Bus Data/.idea/Bus Data.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/LicenseDetect.iml" filepath="$PROJECT_DIR$/.idea/LicenseDetect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/managedatasets.iml" filepath="$PROJECT_DIR$/.idea/managedatasets.iml" />
     </modules>
   </component>
 </project>

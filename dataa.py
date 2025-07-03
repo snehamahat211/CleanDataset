@@ -5,9 +5,6 @@ from turtledemo.nim import COLOR
 import cv2
 from ultralytics import YOLO
 
-model = YOLO("LicenseDetect/runs/detect/train/weights/best.pt")
-
-
 SOURCE_DIRS=['Bike_Car Data','Bus Data']
 FINAL_DIR='FinalDatasets'
 CLASSES_TO_KEEP=[2]
